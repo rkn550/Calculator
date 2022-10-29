@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="Calculator.js"></script>
+
+</head>
+<body>
+    
+    <div class="container" >
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result" value="0" class ="screen" style="text-align: right;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="+"  class="operator" onClick="disp('+')">
+                </td>
+                <td>
+                    <input type="button" value="-"  class="operator" onClick="disp('-')">
+                </td>
+                <td>
+                    <input type="button" value="*"  class="operator" onClick="disp('*')">
+                </td>
+                <td>
+                    <input type="button" value="/"  class="operator" onClick="disp('/')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" class="button" onClick="disp('7')">  
+                </td>
+                <td>
+                    <input type="button" value="8" class="button" onClick="disp('8')">  
+                </td>
+                <td>
+                    <input type="button" value="9" class="button" onClick="disp('9')">  
+                </td>
+                <td rowspan="4">
+                    <input type="button" value= "=" class="button equal-sign" onClick="solve()"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" class="button" onClick="disp('4')">  
+                </td>
+                <td>
+                    <input type="button" value="5" class="button" onClick="disp('5')">  
+                </td>
+                <td>
+                    <input type="button" value="6" class="button" onClick="disp('6')">  
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" class="button" onClick="disp('1')">  
+                </td>
+                <td>
+                    <input type="button" value="2" class="button" onClick="disp('2')">  
+                </td>
+                <td>
+                    <input type="button" value="3" class="button" onClick="disp('3')">  
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="." class="button" onClick="disp('.')">  
+                </td>
+                <td>
+                    <input type="button" value="0" class="button" onClick="disp('0')">  
+                </td>
+                <td>
+                    <input type='button' value = 'C' onclick="clscr()" class="clear"/> 
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
